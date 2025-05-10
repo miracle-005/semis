@@ -1,0 +1,11 @@
+
+{% block content %}
+<div class="profile-view-container">
+    <h2>{{ profile.username|title }}'s Profile</h2>
+    <img src="{{ profile.profile_image.url }}" alt="Profile Picture" style="width:150px;">
+    <p>Gender: {{ profile.gender }}</p>
+    <p>Location: {{ profile.location }}</p>
+    <p>College: {{ profile.college }}</p>
+    <!-- Add more fields as needed -->
+</div>
+{% endblock %}
